@@ -1,0 +1,374 @@
+{
+  "uuid": "5c422ffb-bc39-4288-b1ac-7ad24245d99a",
+  "lastMigration": 33,
+  "name": "Api",
+  "endpointPrefix": "api",
+  "latency": 0,
+  "port": 8080,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "9cac4d07-d51f-4794-93b6-25684a7c570b",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "9257aa6e-7f2c-442a-b559-19ec012cfd64",
+          "body": "{\n  \"token\": \"access_token\"\n}",
+          "latency": 500,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "78aa98b8-e9e2-4329-9766-5cd48045b7d5",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "me",
+      "responses": [
+        {
+          "uuid": "89077d70-3b91-425e-ab52-56f60eda6d28",
+          "body": "{\n  \"id\": \"1\",\n  \"username\": \"davor\",\n  \"email\": \"davor.markovic.dev@outlook.com\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "2c6cb852-1b69-4ae3-84aa-ca16ee508297",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "register",
+      "responses": [
+        {
+          "uuid": "3c916aed-bf6a-4d97-9785-dd1ba61c3868",
+          "body": "{\n  \"success\": true\n}",
+          "latency": 1000,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "761a93ee-2a09-4fe1-aff0-c9126edfa8c8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "books",
+      "responses": [
+        {
+          "uuid": "d8d2dc2f-49df-4e9b-b158-4e2249408c64",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"title\": \"To Kill a Mockingbird\",\n    \"author\": \"Harper Lee\",\n    \"genre\": \"Fiction\",\n    \"publicationDate\": \"1960-07-11T00:00:00.000Z\",\n    \"description\": \"A novel about the serious issues of race, class, gender, and justice in the Deep South, seen through the eyes of young Scout Finch.\"\n  },\n  {\n    \"id\": \"2\",\n    \"title\": \"1984\",\n    \"author\": \"George Orwell\",\n    \"genre\": \"Dystopian\",\n    \"publicationDate\": \"1949-06-08T00:00:00.000Z\",\n    \"description\": \"A chilling depiction of a totalitarian regime, where surveillance and control pervade every aspect of life.\"\n  },\n  {\n    \"id\": \"3\",\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald\",\n    \"genre\": \"Classic\",\n    \"publicationDate\": \"1925-04-10T00:00:00.000Z\",\n    \"description\": \"A story of love, wealth, and betrayal, set in the roaring 1920s and centered on the enigmatic Jay Gatsby.\"\n  },\n  {\n    \"id\": \"4\",\n    \"title\": \"Pride and Prejudice\",\n    \"author\": \"Jane Austen\",\n    \"genre\": \"Romance\",\n    \"publicationDate\": \"1813-01-28T00:00:00.000Z\",\n    \"description\": \"A witty exploration of love, class, and societal expectations through the lives of Elizabeth Bennet and Mr. Darcy.\"\n  },\n  {\n    \"id\": \"5\",\n    \"title\": \"The Hobbit\",\n    \"author\": \"J.R.R. Tolkien\",\n    \"genre\": \"Fantasy\",\n    \"publicationDate\": \"1937-09-21T00:00:00.000Z\",\n    \"description\": \"The epic tale of Bilbo Baggins, who embarks on a life-changing journey to reclaim treasure guarded by a dragon.\"\n  },\n  {\n    \"id\": \"6\",\n    \"title\": \"The Catcher in the Rye\",\n    \"author\": \"J.D. Salinger\",\n    \"genre\": \"Fiction\",\n    \"publicationDate\": \"1951-07-16T00:00:00.000Z\",\n    \"description\": \"A coming-of-age novel about Holden Caulfield, a teenager navigating alienation and identity in mid-20th century America.\"\n  },\n  {\n    \"id\": \"7\",\n    \"title\": \"Moby Dick\",\n    \"author\": \"Herman Melville\",\n    \"genre\": \"Adventure\",\n    \"publicationDate\": \"1851-10-18T00:00:00.000Z\",\n    \"description\": \"The saga of Captain Ahab's obsessive quest to hunt down the white whale, Moby Dick.\"\n  },\n  {\n    \"id\": \"8\",\n    \"title\": \"Brave New World\",\n    \"author\": \"Aldous Huxley\",\n    \"genre\": \"Science Fiction\",\n    \"publicationDate\": \"1932-08-01T00:00:00.000Z\",\n    \"description\": \"A dystopian novel that explores a future society driven by technology, consumerism, and a loss of individuality.\"\n  },\n  {\n    \"id\": \"9\",\n    \"title\": \"The Alchemist\",\n    \"author\": \"Paulo Coelho\",\n    \"genre\": \"Philosophical\",\n    \"publicationDate\": \"1988-05-01T00:00:00.000Z\",\n    \"description\": \"A mystical tale of Santiago, a shepherd who embarks on a journey to discover his personal legend.\"\n  },\n  {\n    \"id\": \"10\",\n    \"title\": \"Harry Potter and the Sorcerer's Stone\",\n    \"author\": \"J.K. Rowling\",\n    \"genre\": \"Fantasy\",\n    \"publicationDate\": \"1997-06-26T00:00:00.000Z\",\n    \"description\": \"The story of Harry Potter, a young wizard who discovers his magical heritage and begins his journey at Hogwarts School of Witchcraft and Wizardry.\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "ed2c7da5-33f5-4290-ac72-695a6c46ba71",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "books",
+      "responses": [
+        {
+          "uuid": "527c5f0f-0731-43c7-8434-e65e4d91762f",
+          "body": "{\n  \"id\": \"11\",\n  \"title\": \"The Picture of Dorian Gray\",\n  \"author\": \"Oscar Wilde\",\n  \"genre\": \"Philosophical\",\n  \"publicationDate\": \"1890-07-01T00:00:00.000Z\",\n  \"description\": \"A tale of a young man who becomes increasingly corrupt as he pursues a life of pleasure, while his portrait ages and bears the consequences of his actions.\"\n}",
+          "latency": 500,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "e5d84e7f-9b48-48ac-a216-c8c34b31d719",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "books/:id",
+      "responses": [
+        {
+          "uuid": "b296fc67-51ea-4b0f-95af-7a71c731b3e8",
+          "body": "{\n  \"id\": \"1\",\n  \"title\": \"To Kill a Mockingbird\",\n  \"author\": \"Harper Lee\",\n  \"genre\": \"Fiction\",\n  \"publicationDate\": \"1960-07-11T00:00:00.000Z\",\n  \"description\": \"A novel about the serious issues of race, class, gender, and justice in the Deep South, seen through the eyes of young Scout Finch.\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "4e4b6000-df6f-44e1-850d-02c1e5319ad7",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "books/:id",
+      "responses": [
+        {
+          "uuid": "3055656d-f4ae-4a15-b9a6-cc244c2a701e",
+          "body": "{\n  \"id\": \"11\",\n  \"title\": \"The Picture of Dorian Gray\",\n  \"author\": \"Oscar Wilde\",\n  \"genre\": \"Philosophical\",\n  \"publicationDate\": \"1890-07-01T00:00:00.000Z\",\n  \"description\": \"A tale of a young man who becomes increasingly corrupt as he pursues a life of pleasure, while his portrait ages and bears the consequences of his actions.\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "daa14411-cc1f-4608-829c-e7748e0de2f3",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "books/:id/comments",
+      "responses": [
+        {
+          "uuid": "598d48cc-3cf9-4520-9458-be7480f95d0b",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"author\": {\n      \"id\": \"1\",\n      \"username\": \"davor\"\n    },\n    \"content\": \"This book was fantastic! I couldn't put it down.\",\n    \"date\": \"2024-12-02T06:11:20.000Z\"\n  },\n  {\n    \"id\": \"2\",\n    \"author\": {\n      \"id\": \"user2\",\n      \"username\": \"jane_smith\"\n    },\n    \"content\": \"I found the plot to be quite predictable, but well-written.\",\n    \"date\": \"2024-06-21T01:52:10.000Z\"\n  },\n  {\n    \"id\": \"3\",\n    \"author\": {\n      \"id\": \"user3\",\n      \"username\": \"alice_jones\"\n    },\n    \"content\": \"A great read! I loved the character development.\",\n    \"date\": \"2022-01-02T05:01:03.000Z\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "220a210f-473f-4cf2-b54e-5f8dda15f121",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "books/:id",
+      "responses": [
+        {
+          "uuid": "68629823-2606-42d3-8344-92be8b4847ac",
+          "body": "{\n  \"success\": true\n}",
+          "latency": 300,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "9cac4d07-d51f-4794-93b6-25684a7c570b"
+    },
+    {
+      "type": "route",
+      "uuid": "78aa98b8-e9e2-4329-9766-5cd48045b7d5"
+    },
+    {
+      "type": "route",
+      "uuid": "2c6cb852-1b69-4ae3-84aa-ca16ee508297"
+    },
+    {
+      "type": "route",
+      "uuid": "761a93ee-2a09-4fe1-aff0-c9126edfa8c8"
+    },
+    {
+      "type": "route",
+      "uuid": "ed2c7da5-33f5-4290-ac72-695a6c46ba71"
+    },
+    {
+      "type": "route",
+      "uuid": "e5d84e7f-9b48-48ac-a216-c8c34b31d719"
+    },
+    {
+      "type": "route",
+      "uuid": "4e4b6000-df6f-44e1-850d-02c1e5319ad7"
+    },
+    {
+      "type": "route",
+      "uuid": "daa14411-cc1f-4608-829c-e7748e0de2f3"
+    },
+    {
+      "type": "route",
+      "uuid": "220a210f-473f-4cf2-b54e-5f8dda15f121"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
